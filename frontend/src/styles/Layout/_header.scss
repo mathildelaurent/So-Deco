@@ -1,0 +1,37 @@
+header {
+    background-color: #eef2e8;
+    display: flex;
+
+    #title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img {
+            width: 40%;
+        }
+    }
+
+    nav {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        .link {
+            font-family: $font;
+            font-size: 15px;
+            .activeLink {
+                border-bottom: 1px solid black;
+            }
+            a {
+                color: black;
+                text-decoration: none;
+                &:hover {
+                    color: #7c2dbd;
+                    border-bottom: 1px solid #7c2dbd;
+                }
+            }
+        }
+    }
+}
